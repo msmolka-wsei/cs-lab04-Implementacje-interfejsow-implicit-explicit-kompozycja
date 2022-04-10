@@ -31,6 +31,8 @@ namespace Zadanie1
 
         public void PowerOn()
         {
+            if (state == IDevice.State.off)
+                Counter++;
             state = IDevice.State.on;
             Console.WriteLine("Device is on ...");
         }
